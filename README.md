@@ -1,4 +1,3 @@
-
 ## Detailed Classification Results
 The following table summarizes the **Precision (AP)**, **Recall (AUC)**, and **F1-score** across all five aluminum alloys for each model architecture.
 
@@ -52,9 +51,19 @@ Hard voting selects the final class based on the majority label predicted by the
 
 ---
 
+## Overall Performance Comparison: Standalone Models vs. Ensemble Strategies
+
+| Architecture | Accuracy | Macro Precision | Macro Recall | Macro F1-Score |
+| :--- | :---: | :---: | :---: | :---: |
+| EfficientNetB0 (Standalone) | 83.90% | 0.71 | 0.86 | 0.71 |
+| ResNet18 (Standalone) | 86.40% | 0.77 | 0.91 | 0.82 |
+| ResNet50 (Standalone) | 93.70% | 0.80 | 0.93 | 0.85 |
+| Hard Voting Ensemble | 94.01% | 0.85 | 0.89 | 0.87 |
+| **Soft Voting Ensemble** | **95.85%** | **0.87** | **0.91** | **0.89** |
+
 ### Final Comparison
 * **Soft Voting Accuracy**: 95.85%
 * **Hard Voting Accuracy**: 94.01%
-* **Best Individual Model (ResNet50)**: 93.7%
+* **Best Individual Model (ResNet50)**: 93.70%
 
 The results confirm that the **Soft Voting Ensemble** provides the most robust identification for X-ray-based material analysis.
